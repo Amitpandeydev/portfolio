@@ -1,11 +1,11 @@
-# 🚀 Portfolio Website (React + Vite + Tailwind)
+#  Portfolio Website (React + Vite + Tailwind)
 
 This repository contains a modern portfolio website built using **React**, **Vite**, and **Tailwind CSS**.
 The project is designed for team collaboration and showcases clean UI, performance, and scalable structure.
 
 ---
 
-## 🎯 Project Objective
+##  Project Objective
 1. Navbar ,basic body content, footer
 2. Navbar links , map
 3. project section --> cards design map
@@ -21,7 +21,7 @@ The project is designed for team collaboration and showcases clean UI, performan
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 - React
 - Vite
 - Tailwind CSS
