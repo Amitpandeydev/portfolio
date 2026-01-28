@@ -17,7 +17,7 @@ export default function Contact() {
 
     setSubmissions([newEntry, ...submissions]);
 
-    // clear form
+   
     setEmail("");
     setMessage("");
   };
@@ -25,7 +25,7 @@ export default function Contact() {
   return (
     <div className="container py-5">
 
-      {/* HEADING */}
+    
       <div className="text-center mb-4" data-aos="fade-up">
         <h2 className="fw-bold">Contact Us</h2>
         <p className="text-muted">
@@ -33,7 +33,6 @@ export default function Contact() {
         </p>
       </div>
 
-      {/* FORM */}
       <div className="row justify-content-center">
         <div className="col-md-6">
           <form onSubmit={handleSubmit} className="card p-4 shadow-sm" data-aos="fade-up">
@@ -68,7 +67,7 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* DISPLAY SUBMITTED DATA */}
+   
       {submissions.length > 0 && (
         <div className="mt-5">
           <h4 className="text-center mb-4">Submitted Messages</h4>
@@ -100,3 +99,4 @@ export default function Contact() {
     </div>
   );
 }
+

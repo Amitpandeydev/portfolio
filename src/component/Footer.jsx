@@ -5,16 +5,14 @@ export default function Footer() {
 
         <div className="row align-items-center">
           
-          {/* LEFT */}
           <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
             <h5 className="mb-1">NovaStack</h5>
             <small className="text-secondary">
-              Building reliable web solutions
+              Building reliable web solutions 
               Delivering scalable and user-focused digital products
             </small>
           </div>
 
-          {/* RIGHT */}
           <div className="col-md-6 text-center text-md-end">
             <a href="#" className="text-light me-3 fs-5">
               <i className="fab fa-instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">

@@ -6,7 +6,7 @@ export default function Projects() {
       title: "NovaStack Portfolio",
       image: "https://via.placeholder.com/400x250",
       description: "Team portfolio website built with React and Bootstrap.",
-      link: "https://linkedin.com", // temporary
+      link: "https://linkedin.com", 
       buttonText: "View Concept",
     },
     {
@@ -46,7 +46,7 @@ export default function Projects() {
   return (
     <div className="container py-5">
 
-      {/* HEADER */}
+    
       <div className="text-center mb-5" data-aos="fade-up">
         <h2 className="fw-bold">Projects</h2>
         <p className="text-muted">
@@ -54,7 +54,7 @@ export default function Projects() {
         </p>
       </div>
 
-      {/* PROJECT CARDS */}
+
       <div className="row">
         {projects.map((project, index) => (
           <div
