@@ -23,7 +23,7 @@ const teamMembers = [
   return (
     <div className="container py-5">
 
-      {/* ABOUT US */}
+    
       <div className="text-center mb-5" data-aos="fade-up">
         <h2 className="fw-bold">About NovaStack</h2>
         <p className="text-muted mt-3">
@@ -32,7 +32,7 @@ const teamMembers = [
         </p>
       </div>
 
-      {/* TEAM MEMBERS */}
+      
       <div className="row">
         {teamMembers.map((member, index) => (
           <div

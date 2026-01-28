@@ -10,7 +10,7 @@ export default function Home() {
      
 <div>
 
-      {/* HERO SECTION */}
+ 
       <section className="bg-dark text-light py-5">
         <div className="container text-center">
           <h1 className="display-4 fw-bold">
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ABOUT SNAPSHOT */}
+
       <section className="py-5">
         <div className="container text-center">
           <h2 className="fw-bold mb-3">About Me</h2>
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SKILLS */}
+
       <section className="bg-light py-5">
         <div className="container">
           <h2 className="text-center fw-bold mb-4">Skills</h2>
@@ -54,7 +54,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROJECT PREVIEW */}
       <section className="py-5">
         <div className="container text-center">
           <h2 className="fw-bold mb-4">Projects</h2>
@@ -69,7 +68,7 @@ export default function Home() {
 
     </div>
 
-    <Footer/>
+<Footer/>
     
     </>
   )
