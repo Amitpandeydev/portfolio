@@ -1,27 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
 
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
 
+function App() {
 
-export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
-
-
-    
-    <div className="min-h-screen bg-black flex items-center justify-center">
-
-
-
-      <h1 className="text-4xl font-bold text-white">
-        “Online exam mein jo bachcha Google open nahi karta — wahi real topper hota hai.”
-      </h1>
-
-
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/projects" element={<Projects />} />
+    </Routes>
+  );
 }
 
-
-
+export default App;
