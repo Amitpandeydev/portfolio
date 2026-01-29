@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 export default function About() {
 
 const teamMembers = [
   {  id:1, name: "Amit Pandey", designation: "Team Lead / Frontend" , description:"Part of the NovaStack team, focusing on frontend development and project coordination with an emphasis on clean design and user experience.", Achievement:"Contributed to building responsive interfaces and coordinating frontend tasks within a team-based workflow.", currentprofile:"Frontend Developer & Team Coordinator at NovaStack" ,image: "/team/Amit.jpg.jpeg"
 },
-  {id:2, name: "Member 2", designation: "Frontend Developer", description:"Frontend developer at NovaStack, working on building responsive and user-friendly web interfaces.", Achievement:"Implemented clean UI components using modern frontend technologies.", currentprofile:"Frontend Developer at NovaStack", image:""},
+  {id:2, name: "Member 2", designation: "Frontend Developer", description:"Frontend developer at NovaStack, working on building responsive and user-friendly web interfaces.", Achievement:"Implemented clean UI components using modern frontend technologies.", currentprofile:"Frontend Developer at NovaStackFocused on developing clean, scalable UI components and contributing to team-driven development.", image:""},
 
-  {id:3, name: "Member 3", designation: "Backend Developer",description:"Backend developer at NovaStack, responsible for server-side logic and data handling.", Achievement:"Developed and integrated backend features to support web applications.", currentprofile:"Backend Developer at NovaStack" ,image:""},
+  {id:3, name: "Member 3", designation: "Backend Developer",description:"Backend developer at NovaStack, responsible for server-side logic and data handling.", Achievement:"Developed and integrated backend features to support web applications.", currentprofile:"Backend Developer at NovaStackWorking on server-side logic, data handling, and supporting reliable backend functionality for web applications." ,image:""},
   {id:4,name: "Member 4", designation: "UI/UX Designer",description:"UI/UX designer at NovaStack, focused on creating clean and intuitive user experiences.", Achievement:"Designed user-friendly layouts that improved overall usability.", currentprofile:"UI/UX Designer at NovaStack", image:"" },
   {id:5, name: "Member 5", designation: "Full Stack Developer",description:"Full stack developer at NovaStack, working across frontend and backend development.", Achievement:"Contributed to end-to-end development of web applications.", currentprofile:"Full Stack Developer at NovaStack", image:"" },
   {id:6, name: "Member 6", designation: "React Developer",description:"React developer at NovaStack, focused on building reusable and scalable UI components.", Achievement:"Built modular React components to improve application structure.", currentprofile:"React Developer at NovaStack" , image:""},
@@ -69,6 +70,18 @@ const teamMembers = [
                 <p className="small text-primary">
                   {member.currentprofile}
                 </p>
+                  
+{teamMembers.filter ((Member)=>member.name === name)
+.map((Member)=>(<div key={member.id} class="card bg-dark text-white">
+  <img src={member.image} class="card-img" alt="..."/>
+  <div class="card-img-overlay">
+    <h5 class={member.name}>Card title</h5>
+    <p class={member.designation}>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class={member.description}>Last updated 3 </p>
+     <p class={member.Achievement}>Last updated 3 </p>
+      <p class={member.currentprofile}>Last updated 3 </p>
+  </div>
+</div>))}
 
               </div>
             </div>

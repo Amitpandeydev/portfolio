@@ -60,9 +60,9 @@ export default function Home() {
           <p className="text-muted">
             Here are some of our featured projects.
           </p>
-          <a href="/Projects" className="btn btn-dark mt-3">
+           <Link to ="/Projects" className="btn btn-dark mt-3">
             See All Projects
-          </a>
+          </Link>
         </div>
       </section>
 
